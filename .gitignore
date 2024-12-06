@@ -1,0 +1,10 @@
+echo 'sftp.json' >> .gitignore
+node_modules
+package.json
+package-lock.json
+# Ignorar la carpeta 'images' y todo su contenido
+images/
+
+# Ignorar la carpeta 'BD' y todo su contenido
+BD/
+*.log

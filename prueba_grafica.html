@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grafica de Pastel 99</title>
+  </head>
+  <body>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.0/chart.min.js"
+      integrity="sha512-asxKqQghC1oBShyhiBwA+YgotaSYKxGP1rcSYTDrB0U6DxwlJjU59B67U8+5/++uFjcuVM8Hh5cokLjZlhm3Vg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.0.0/chartjs-plugin-datalabels.min.js"
+      integrity="sha512-R/QOHLpV1Ggq22vfDAWYOaMd5RopHrJNMxi8/lJu8Oihwi4Ho4BRFeiMiCefn9rasajKjnx9/fTQ/xkWnkDACg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <canvas id="myPieGraph" style="max-height: 200px"></canvas>
+
+    <script>
+      const pieData = {
+        labels: ["Avance", "Pendiente"],
+        datasets: [
+          {
+            data: [72, 28],
+            backgroundColor: ["#4EADEB", "#3F86CB"],
+            hoverOffset: 4,
+          },
+        ],
+      };
+
+      var pieCtx = myPieGraph.getContext("2d");
+
+      var myPieChart = new Chart(pieCtx, {
+        /* IMPORTANTE: cargamos el complemento */
+        plugins: [ChartDataLabels],
+        type: "pie",
+        data: pieData,
+        options: {
+          plugins: {
+            datalabels: {
+              /* anchor puede ser "start", "center" o "end" */
+              anchor: "center",
+              /* Podemos modificar el texto a mostrar */
+              formatter: (dato) => dato + "%",
+              /* Color del texto */
+              color: "black",
+              /* Formato de la fuente */
+              font: {
+                family: '"Times New Roman", Times, serif',
+                size: "28",
+                weight: "bold",
+              },
+              /* Formato de la caja contenedora */
+              //padding: "4",
+              //borderWidth: 2,
+              //borderColor: "darkblue",
+              //borderRadius: 8,
+              //backgroundColor: "lightblue"
+            },
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
