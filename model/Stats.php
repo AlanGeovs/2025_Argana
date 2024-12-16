@@ -6,7 +6,7 @@ class Stats
     protected static function conectar()
     {
         try {
-            $conexion = new PDO('mysql:host=localhost; dbname=dbi6bdhoqxrrng', 'uqnnskgagovis', 'kqgsgdipj2vs');
+            $conexion = new PDO('mysql:host=localhost; dbname=dbgbugrafge90d', 'uqoksoigmvtky', 'zpw5ffyf2l04');
             $conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             return $conexion;
         } catch (PDOException $e) {

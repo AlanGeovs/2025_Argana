@@ -96,7 +96,7 @@
                         </div>
                         <div class="col-lg-6 p-t-100">
                             <div class="text">
-                                <h1>Inicio de Sesión Tradex -- </h1>
+                                <h1>Inicio de Sesión ARGANA </h1>
 
                                 <p class="s-18 p-t-b-20 font-weight">Ingresa con tu usuario y contraseña.</p>
                             </div>

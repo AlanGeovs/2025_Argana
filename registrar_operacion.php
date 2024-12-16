@@ -166,7 +166,7 @@ if (!isset($_SESSION["idUser"])) {
                             <div class="col-md-9">
                                 <div class="row">
                                     <div class="col-md-8 mb-3">
-                                        <label for="comprador">Comprador</label>
+                                        <label for="comprador">Cliente</label>
                                         <input type="text" class="form-control" id="comprador" placeholder="Buscar comprador por nombre o ID" required>
                                         <select id="comprador_result" class="custom-select form-control mt-2" size="5" style="display: none;"></select>
                                     </div>
@@ -193,7 +193,7 @@ if (!isset($_SESSION["idUser"])) {
                                     </div>
                                 </div>
 
-                                <div class="row">
+                                <!-- <div class="row">
                                     <div class="col-md-8 mb-3">
                                         <label for="vendedor">Vendedor</label>
                                         <input type="text" class="form-control" id="vendedor" placeholder="Buscar vendedor por nombre o ID" required>
@@ -220,26 +220,26 @@ if (!isset($_SESSION["idUser"])) {
                                             <option value="15">15%</option>
                                         </select>
                                     </div>
-                                </div>
+                                </div> -->
 
                                 <div class="row">
                                     <div class="col-md-12 mb-3">
                                         <h5>Cantidad</h5>
                                     </div>
                                     <div class="col-md-6 mb-3">
-                                        <label for="intercambio">Intercambio ($)</label>
+                                        <label for="intercambio">Factura ($)</label>
                                         <div class="input-group">
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text">$</span>
                                             </div>
-                                            <input type="text" class="form-control" id="intercambio" placeholder="Monto en intercambio" required>
+                                            <input type="text" class="form-control" id="intercambio" placeholder="Monto de la factura" required>
                                             <div class="invalid-feedback">
                                                 Por favor, proporciona un monto válido.
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-6 mb-3">
-                                        <label for="efectivo">Efectivo ($)</label>
+                                        <label for="efectivo">Factura sin IVA ($)</label>
                                         <div class="input-group">
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text">$</span>

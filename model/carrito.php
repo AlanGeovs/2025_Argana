@@ -9,7 +9,7 @@ class Carrito
     protected static function conectar()
     {
         try {
-            $conexion = new PDO('mysql:host=localhost; dbname=dbi6bdhoqxrrng', 'uqnnskgagovis', 'kqgsgdipj2vs');
+            $conexion = new PDO('mysql:host=localhost; dbname=dbgbugrafge90d', 'uqoksoigmvtky', 'zpw5ffyf2l04');
             return $conexion;
         } catch (PDOException $e) {
             die("Error: " . $e->getMessage());
